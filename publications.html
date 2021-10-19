@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Travis Scrimshaw's publications">
+<meta name="author" content="Travis Scrimshaw">
+<meta name="keywords" content="Travis Scrimshaw, Research, Mathematics, Combinatorics, Representation Theory, OCAMI, Osaka City University">
+
+<! -- Mathjax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<link rel="stylesheet" href="main.css"> 
+
+<script>
+function clear() {
+    var ids = ["all", "published", "preprints"];
+    for(i=0; i<ids.length; i++)
+        document.getElementById(ids[i]).classList.remove("active");
+}
+
+function show(num) {
+    switch(num) {
+        case 0: // Set all to be displayed
+            clear();
+        	document.getElementById("all").classList.add("active");
+            var preprints = document.getElementsByClassName("preprint");
+            var pubs = document.getElementsByClassName("publication");
+            for(i=0; i<preprints.length; i++)
+                preprints[i].style.display = "list-item";
+            for(i=0; i<pubs.length; i++)
+                pubs[i].style.display = "list-item";
+            break;
+
+        case 1: // Set only published to be displayed
+            clear();
+        	document.getElementById("published").classList.add("active");
+            var preprints = document.getElementsByClassName("preprint");
+            var pubs = document.getElementsByClassName("publication");
+            for(i=0; i<preprints.length; i++)
+                preprints[i].style.display = "none";
+            for(i=0; i<pubs.length; i++)
+                pubs[i].style.display = "list-item";
+            break;
+
+        case 2: // Set only preprints to be displayed
+            clear();
+            document.getElementById("preprints").classList.add("active");
+            var preprints = document.getElementsByClassName("preprint");
+            var pubs = document.getElementsByClassName("publication");
+            for(i=0; i<preprints.length; i++)
+                preprints[i].style.display = "list-item";
+            for(i=0; i<pubs.length; i++)
+                pubs[i].style.display = "none";
+            break;
+    }
+}
+</script>
+
+<title>Travis Scrimshaw: Publications</title>
+</head>
+
+
+
+<body id="publications">
+
+<header>
+<h1>Publications</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a href="https://tscrim.github.io/">Home</a></li>
+  <li><a href="research.html">Research</a></li>
+  <li><a class="active" href="#publications">Publications</a></li>
+  <li style="float:right" class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Links</a>
+    <div class="dropdown-content">
+      <a href="https://arxiv.org/">arXiv</a>
+      <a href="http://www.sagemath.org/">SageMath</a>
+      <a href="http://www.findstat.org/">FindStat</a>
+      <a href="https://oeis.org/">OEIS</a>
+    </div>
+  </li>
+</ul>
+</nav>
+
+<main>
+<ul class="selector">
+  <li id="all" onclick="show(0)" class="active">All</li>
+  <li id="published" onclick="show(1)">Published</li>
+  <li id="preprints" onclick="show(2)">Preprints</li>
+</ul>
+
+<ol class="publications-list">
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Rigged configurations and the \(\ast\)-involution for generalized Kac&ndash;Moody algebras</i>.
+    J. Algebra, <b>573</b> (2021) pp. 148&ndash;168. </br>
+    [<a href="https://doi.org/10.1016/j.jalgebra.2020.12.035">doi: 10.1016/j.jalgebra.2020.12.035</a>]
+    [<a href="https://arxiv.org/abs/1812.07746">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://web.tuat.ac.jp/~naoik/">Katsuyuki Naoi</a>:
+    <i>Existence of Kirillov&ndash;Reshetikhin crystals for near adjoint nodes in exceptional types</i>. J. Pure Appl. Algebra, <b>225</b>(5) (2021) 106593.</br>
+    [<a href="https://doi.org/10.1016/j.jpaa.2020.106593">doi: 10.1016/j.jpaa.2020.106593</a>]
+    [<a href="https://arxiv.org/abs/1903.11681">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/site/meeseongim/">Mee Seong Im</a>:
+    <i>The regularity of almost-commuting partial Grothendieck&ndash;Springer resolutions and parabolic analogs of Calogero&ndash;Moser varieties</i>.
+    J. Lie Theory, <b>31</b>(1) (2021) pp. 127&ndash;148. </br>
+    [<a href="https://arxiv.org/abs/1812.02283">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://rekhabiswal.github.io/">Rekha Biswal</a>:
+    <i>Kirillov&ndash;Reshetikhin crystals \(B^{7,s}\) for type \(E_7^{(1)}\)</i>.
+    Comm. Algebra, to appear (2021). </br> [<a href="https://arxiv.org/abs/1901.00182">arXiv</a>]
+  </li>
+
+  <li class="preprint">
+    With <a href="https://sites.google.com/site/valentinbuciumas/">Valentin Buciumas</a>:
+    <i>Quasi-solvable lattice models for \(\mathrm{Sp}_{2n}\) and \(\mathrm{SO}_{2n+1}\) Demazure atoms and characters</i>. Preprint, (2021).</br>
+    [<a href="https://arxiv.org/abs/2101.08907">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    <i>Uniform description of the rigged configuration bijection</i>. Selecta Math. (N.S.), <b>26</b>(42) (2020).</br>
+    [<a href="https://doi.org/10.1007/s00029-020-00564-8">doi: 10.1007/s00029-020-00564-8</a>]
+    [<a href="https://arxiv.org/abs/1703.08945">arXiv</a>]
+    [<a href="https://rdcu.be/b41Ii">view-only</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/site/valentinbuciumas/">Valentin Buciumas</a>:
+    <i>Double Grothendieck polynomials and colored lattice models</i>. Int. Math. Res. Not. IMRN., rnaa327 (2020).</br>
+    [<a href="https://doi.org/10.1093/imrn/rnaa327">doi: 10.1093/imrn/rnaa327</a>]
+    [<a href="https://arxiv.org/abs/2007.04533">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/site/valentinbuciumas/">Valentin Buciumas</a> and <a href="https://math.umn.edu/directory/katherine-katy-weber">Katherine Weber</a>:
+    <i>Colored five-vertex models and Lascoux polynomials and atoms</i>. J. Lond. Math. Soc., <b>102</b>(3) (2020) pp. 1047&ndash;1066.</br>
+    [<a href="https://doi.org/10.1112/jlms.12347">doi: 10.1112/jlms.12347</a>]
+    [<a href="https://arxiv.org/abs/1908.07364">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With Cara Monical and <a href="http://www-personal.umich.edu/~pechenik/">Oliver Pechenik</a>:
+    <i>Crystal structures for symmetric Grothendieck polynomials</i>. Transform. Groups, to appear (2020).</br>
+    [<a href="https://doi.org/10.1007/s00031-020-09623-y">doi: 10.1007/s00031-020-09623-y</a>]
+    [<a href="https://arxiv.org/abs/1807.03294">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With Erik Aas and <a href="http://www.cip.ifi.lmu.de/~grinberg/">Darij Grinberg</a>:
+    <i>Multiline queues with spectral parameters</i>. Comm. Math. Phys., <b>374</b>(3) (2020) pp. 1743&ndash;1786.</br> 
+    [<a href="https://doi.org/10.1007/s00220-020-03694-4">doi: 10.1007/s00220-020-03694-4</a>]
+    [<a href="https://arxiv.org/abs/1810.08157">arXiv</a>]
+    [<a href="https://rdcu.be/b1rU1">view-only</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://guests.mpim-bonn.mpg.de/hawkes/">Graham Hawkes</a>:
+    <i>Crystal structures for canonical Grothendieck functions</i>. Algebraic Combin., <b>3</b>(3) (2020) pp. 727&ndash;755.</br>
+    [<a href="https://doi.org/10.5802/alco.111">doi: 10.5802/alco.111</a>] [<a href="https://arxiv.org/abs/1907.11415">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Candidate for the crystal \(B(-\infty)\) for the queer Lie superalgebra</i>.
+    Kyoto J. Math., to appear (2020). </br>
+    [<a href="https://arxiv.org/abs/1903.03236">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://rekhabiswal.github.io/">Rekha Biswal</a>:
+    <i>Existence of Kirillov&ndash;Reshetikhin crystals for multiplicity free nodes</i>.
+    Publ. Res. Inst. Math. Sci., <b>56</b>(4) (2020) pp. 761&ndash;778.</br>
+    [<a href="https://doi.org/10.4171/PRIMS/56-4-4">doi: 10.4171/PRIMS/56-4-4</a>]
+    [<a href="http://arxiv.org/abs/1902.00769">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://egunawan.github.io/">Emily Gunawan</a>:
+    <i>Kirillov&ndash;Reshetikhin crystals \(B^{1,s}\) for \(\widehat{\mathfrak{sl}}_n\) using Nakajima monomials</i>. Algebr. Represent. Theory, <b>23</b>(4) (2020) pp. 1609&ndash;1635.</br>
+    [<a href="https://doi.org/10.1007/s10468-019-09904-5">doi: 10.1007/s10468-019-09904-5</a>]
+    [<a href="https://arxiv.org/abs/1610.09224">arXiv</a>]
+    [<a href="https://rdcu.be/bHf3b">view-only</a>]
+  </li>
+
+  <li class="preprint">
+    With <a href="https://sites.google.com/site/motegikohei/home">Kohei Motegi</a>:
+    <i>Refined dual Grothendieck polynomials, integrability, and the Schur measure</i>. Preprint, (2020).</br>
+    [<a href="https://arxiv.org/abs/2012.15011">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/site/mathsejinoh/">Se-jin Oh</a>:
+    <i>Categorical relations between Langlands dual quantum affine algebras: Exceptional cases</i>. Comm. Math. Phys., <b>368</b>(1) (2019) pp. 295&ndash;367.</br>
+    [<a href="https://doi.org/10.1007/s00220-019-03287-w">doi: 10.1007/s00220-019-03287-w</a>]
+    [<a href="https://arxiv.org/abs/1802.09253">arXiv</a>]
+    [<a href="https://rdcu.be/bo0JU">view-only</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/ncsu.edu/xliu65/home">Xuan Liu</a>:
+    <i>A uniform approach to soliton cellular automata using rigged configurations</i>. Ann. Henri Poincaré, <b>20</b>(4) (2019) pp. 1175&ndash;1215.</br>
+    [<a href="https://doi.org/10.1007/s00023-019-00773-8">doi: 10.1007/s00023-019-00773-8</a>]
+    [<a href="https://arxiv.org/abs/1706.02443">arXiv</a>]
+    [<a href="https://rdcu.be/bqAXK">view-only</a>]
+    <a href="SCA.sage">SageMath code</a>
+  </li>
+
+  <li class="publication">
+    With <a href="https://www.albany.edu/~lenart/">Cristian Lenart</a>:
+    <i>On higher level Kirillov&ndash;Reshetikhin crystals, Demazure crystals, and related uniform models</i>. J. Algebra, <b>539</b> (2019), pp. 285&ndash;304.</br>
+    [<a href="https://doi.org/10.1016/j.jalgebra.2019.07.036">doi: 10.1016/j.jalgebra.2019.07.036</a>]
+    [<a href="https://arxiv.org/abs/1809.02908">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With Arthur Lubovsky:
+    <i>Alcove path model for \(B(\infty)\)</i>. J. Pure Appl. Algebra, <b>223</b>(11) (2019), pp. 4778&ndash;4800.</br>
+    [<a href="https://doi.org/10.1016/j.jpaa.2019.02.015">doi: 10.1016/j.jpaa.2019.02.015</a>]
+    [<a href="https://arxiv.org/abs/1611.09618">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://www.unk.edu/academics/math/faculty-staff/dr-jia-huang.php">Jia Huang</a> and <a href="https://www.math.ucsd.edu/~bprhoades/">Brendon Rhoades</a>:
+    <i>Hall-Littlewood polynomials and a Hecke action on ordered set partitions</i>. Proc. Amer. Math. Soc., <b>147</b>(5) (2019) pp. 1839&ndash;1850.</br>
+    [<a href="https://doi.org/10.1090/proc/14157">doi: 10.1090/proc/14157</a>]
+    [<a href="https://arxiv.org/abs/1709.07995">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/site/mathsejinoh/">Se-jin Oh</a>:
+    <i>Identities from representation theory</i>. Discrete Math., <b>342</b>(9) (2019), pp. 2493&ndash;2541.</br>
+    [<a href="https://doi.org/10.1016/j.disc.2019.05.020">doi: 10.1016/j.disc.2019.05.020</a>]
+    [<a href="https://arxiv.org/abs/1805.00113">arXiv</a>]
+  </li>
+
+  <li class="preprint">
+    With <a href="https://sites.google.com/site/mathsejinoh/">Se-jin Oh</a>:
+    <i>Simplicity of tensor products of Kirillov&ndash;Reshetikhin modules: nonexceptional affine and G types</i>. Preprint, (2019).</br>
+    [<a href="https://arxiv.org/abs/1910.10347">arXiv</a>]
+  </li>
+
+  <li class="preprint">
+    With <a href="http://www-personal.umich.edu/~pechenik/">Oliver Pechenik</a>:
+    <i>K-theoretic crystals for set-valued tableaux of rectangular shapes</i>. Preprint, (2019).</br>
+    [<a href="https://arxiv.org/abs/1904.09674">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://www.sci.osaka-cu.ac.jp/~okado/index-e.html">Masato Okado</a> and <a href="https://www.math.ucdavis.edu/~anne/">Anne Schilling</a>:
+    <i>Rigged configuration bijection and the proof of the \(X = M\) conjecture for nonexceptional affine types</i>. J. Algebra <b>516</b> (2018) pp. 1&ndash;37.</br>
+    [<a href="https://doi.org/10.1016/j.jalgebra.2018.08.031">doi: 10.1016/j.jalgebra.2018.08.031</a>]
+    [<a href="https://arxiv.org/abs/1707.04876">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Rigged configurations and the \(\ast\)-involution</i>. Lett. Math. Phys., <b>108</b>(9) (2018) pp. 1985&ndash;2007.</br>
+    [<a href="https://doi.org/10.1007/s11005-018-1063-2">doi: 10.1007/s11005-018-1063-2</a>]
+    [<a href="https://arxiv.org/abs/1601.06137">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://sites.google.com/view/jianping-pan/">Jianping Pan</a>:
+    <i>Virtualization map for the Littelmann path model</i>. Transform. Groups, <b>23</b>(4) (2018), pp. 1045&ndash;1061.</br>
+    [<a href="https://doi.org/10.1007/s00031-017-9456-3">doi: 10.1007/s00031-017-9456-3</a>]
+    [<a href="https://arxiv.org/abs/1509.08103">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Virtual crystals and Nakajima monomials</i>. SIGMA Symmetry Integrability Geom. Methods Appl., <b>14</b> (2018), 103, 19 pages.</br>
+    [<a href="https://doi.org/10.3842/SIGMA.2018.103">doi: 10.3842/SIGMA.2018.103</a>]
+    [<a href="https://arxiv.org/abs/1707.09638">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    Rigged configurations as tropicalizations of loop Schur functions. J. Integrable Syst., <b>2</b>(1) (2017) pp. 1&ndash;24.</br>
+    [<a href="https://doi.org/10.1093/integr/xyw015">doi: 10.1093/integr/xyw015</a>]
+    [<a href="https://arxiv.org/abs/1607.03232">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://www.sci.osaka-cu.ac.jp/~okado/index-e.html">Masato Okado</a>, Reiho Sakamoto,
+     and <a href="https://www.math.ucdavis.edu/~anne/">Anne Schilling</a>:
+    <i>Type \(D_n^{(1)}\) rigged configuration bijection</i>. J. Algebraic Combin., <b>46</b>(2) (2017) pp. 341&ndash;401.</br>
+    [<a href="https://doi.org/10.1007/s10801-017-0756-4">doi: 10.1007/s10801-017-0756-4</a>]
+    [<a href="https://arxiv.org/abs/1603.08121">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Rigged configurations for all symmetrizable types</i>. Electron. J. Combin., <b>24</b>(1) (2017) #P1.30.</br>
+    [<a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i1p30">url</a>]
+    [<a href="https://doi.org/10.37236/6028">doi: 10.37236/6028</a>]
+    [<a href="https://arxiv.org/abs/1509.07833">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>Connecting marginally large tableaux and rigged configurations via crystals</i>. Algebr. Represent. Theory, <b>19</b>(3) (2016) pp. 523&ndash;546.</br>
+    [<a href="https://doi.org/10.1007/s10468-015-9587-y">doi: 10.1007/s10468-015-9587-y</a>]
+    [<a href="https://arxiv.org/abs/1505.07040">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    <i>A crystal to rigged configuration bijection for type \(D_4^{(3)}\)</i>. J. Algebra, <b>448C</b> (2016), pp. 294&ndash;349.</br>
+    [<a href="https://doi.org/10.1016/j.jalgebra.2015.09.047">doi: 10.1016/j.jalgebra.2015.09.047</a>]
+    [<a href="https://arxiv.org/abs/1505.05910">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="https://www.math.ucdavis.edu/~anne/">Anne Schilling</a>:
+    <i>Crystal structure on rigged configurations and the filling map</i>. Electron. J. Combin., <b>22</b>(1) (2015) #P1.73.</br>
+    [<a href="http://www.combinatorics.org/ojs/index.php/eljc/article/view/v22i1p73">url</a>]
+    [<a href="https://doi.org/10.37236/4674">doi: 10.37236/4674</a>]
+    [<a href="https://arxiv.org/abs/1409.2920">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>:
+    <i>A rigged configuration model for \(B(\infty)\)</i>. J. Combin. Theory Ser. A, <b>133</b> (2015) pp. 29&ndash;57.</br>
+    [<a href="https://doi.org/10.1016/j.jcta.2015.01.008">doi: 10.1016/j.jcta.2015.01.008</a>]
+    [<a href="https://arxiv.org/abs/1404.6539">arXiv</a>]
+  </li>
+
+  <li class="publication">
+    With Paul Prue:
+    <i>Abrams's stable equivalence for graph braid groups</i>. Topology Appl., <b>178</b> (2014) pp. 136&ndash;145.</br>
+    [<a href="https://doi.org/10.1016/j.topol.2014.09.009">doi: 10.1016/j.topol.2014.09.009</a>]
+    [<a href="https://arxiv.org/abs/0909.5511">arXiv</a>]
+  </li>
+
+  <li class="preprint">
+    With <a href="http://www.kurims.kyoto-u.ac.jp/~kirillov/">Anatol N. Kirillov</a>:
+    <i>Hook-content formula using excited Young diagrams</i>. (2019).</br>
+    [<a href="https://arxiv.org/abs/1904.00371">arXiv</a>]
+  </li>
+
+  <li class="preprint">
+    With Chris Berg, <a href="https://www.lri.fr/~pons/en/">Viviane Pons</a>,
+     <a href="https://www.ndsu.edu/pubweb/~striker/">Jessica Striker</a>, and
+     <a href="https://homepage.rub.de/christian.stump/">Christian Stump</a>:
+    <i>FindStat &mdash; the combinatorial statistics database</i>. (2014) </br>
+    [<a href="https://arxiv.org/abs/1401.3690">arXiv</a>]
+  </li>
+</ol>
+</main>
+
+<hr/>
+
+<footer>
+<p>Contact: tcscrims {at} gmail.com</p>
+</footer>
+
+</body>
+
+</html>
+

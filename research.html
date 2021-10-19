@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Travis Scrimshaw's research">
+<meta name="author" content="Travis Scrimshaw">
+<meta name="keywords" content="Travis Scrimshaw, Research, Mathematics, Combinatorics, Representation Theory, OCAMI, Osaka City University">
+
+<! -- Mathjax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<link rel="stylesheet" href="main.css"> 
+
+<title>Travis Scrimshaw: Research</title>
+</head>
+
+
+
+<body id="research">
+
+<header>
+<h1>My Research</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a href="https://tscrim.github.io/">Home</a></li>
+  <li><a class="active" href="#research">Research</a></li>
+  <li><a href="publications.html">Publications</a></li>
+  <li style="float:right" class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Links</a>
+    <div class="dropdown-content">
+      <a href="https://arxiv.org/">arXiv</a>
+      <a href="http://www.sagemath.org/">SageMath</a>
+      <a href="http://www.findstat.org/">FindStat</a>
+      <a href="https://oeis.org/">OEIS</a>
+    </div>
+  </li>
+</ul>
+</nav>
+
+<main>
+<p>
+The main part of my research is in the intersection of combinatorics and
+representation theory. The motivation for the problems I am inerested in
+usually come from mathematical physics, more specifically with integrable
+systems and
+<a href="https://en.wikipedia.org/wiki/Quantum_group#Drinfeld%E2%80%93Jimbo_type_quantum_groups">
+(Drinfel'd&ndash;Jimbo) quantum groups</a>. My research also has
+motivations and applications in algebraic geometry.
+</p>
+
+<p>
+My focus is in <em>crystals</em>, which is a combinatorial realization
+of a special basis for a quantum group representation. Crystals encode the
+representation through certain edge-colored weighted directed graphs known
+as crystal graphs. They also translate many of the algebraic properties of
+the representations into combinatorial rules such as tensor products,
+dualities, and restrictions. This can also be used to give representation
+theoretic interpretations of more classical combinatorial maps. For instance,
+in type \(A_n\), crystals are given by semistandard tableaux and maps such as
+evacuation, promotion, (co)plactic operations have natural interpretations
+using crystals.
+</p>
+
+<p>
+For more information on crystals (in particular, how you can use them in
+<a href="http://www.sagemath.org">SageMath</a>), see the
+<a href="http://www.sagemath.org">SageMath</a> thematic tutorial on
+<a href="http://doc.sagemath.org/html/en/thematic_tutorials/lie.html">
+Lie methods and related combinatorics</a>.
+A good book for crystals is <i>Crystal bases: Representations and Combinatorics</i>
+by Danial Bump and Anne Schilling.
+</p>
+
+<p>
+One important class of crystals are certain finite crystals for affine type
+called <em>Kirillov&ndash;Reshetikhin (KR) crystals</em>, which are the crystal
+bases of Kirillov&ndash;Reshetikhin modules. These are no longer highest
+weight crystals, and so present unique challenges outside of the general
+theory. Despite this, they are known to be connected through their character
+theory with <a href="https://en.wikipedia.org/wiki/Macdonald_polynomials">
+(nonsymmetric) Macdonald polynomials<a/> specialized at \(t = 0\), Q-systems,
+integrable systems, and soliton cellular automata. They are also related
+to Demazure subcrystals of affine highest weight crystals. Open problems
+include showing the existence of KR crystals for the exceptional affine types,
+constructing combinatorial model for the KR crystals, and describing a uniform
+model for all KR crystals.
+</p>
+
+<p>
+One combinatorial model that I have been working on is given by <em>rigged
+configurations</em>. Rigged configurations come from mathematical physics,
+where they were originally used to index solutions to the Bethe ansatz to
+Heisenberg spin chains. The <em>\(X=M\) conjecture</em> of Hatayama <i>et al.</i>
+says there is an equality of the weighted generating functions of rigged
+configurations and classically highest weight elements in a tensor product
+of KR crystals. I have been working on the program to prove the \(X=M\)
+conjecture by constructing a particular recursive bijection \(\Phi\).
+<a href="http://www.sci.osaka-cu.ac.jp/~okado/index-e.html">Masato Okado</a>,
+<a href="https://www.math.ucdavis.edu/~anne/">Anne Schilling</a> and I have
+shown this in all nonexceptional affine types, and I am currently working on
+proving such a bijection in the exceptional affine types. The bijection \(\Phi\)
+can also be considered as a linearization of the dynamics of solution cellular
+automata, a generalization of the Takahashi&ndash;Satsuma box-ball system,
+which have natural interpretations using rigged configurations.
+</p>
+
+<p>
+From \(\Phi\), we can translate the natural (classical) crystal structure
+from the Kirillov&ndash;Reshetikhin crystals to rigged configurations. This
+was first done for highest weight crystals \(B(\lambda)\) in simply-laced types
+by Anne Schilling in 2006. <a href="http://people.cst.cmich.edu/salis1bt/">Ben Salisbury</a>
+and I then extended this to all (symmetrizable) types,
+<a href="https://en.wikipedia.org/wiki/Generalized_Kac%E2%80%93Moody_algebra">
+Borcherds (or generalized Kac&ndash;Moody Lie) algebras</a>, and to the
+crystal \(B(\infty)\). It appears that rigged configurations are a natural
+crystal model as the \(*\)-involution corresponds to the natural involution
+of replacing riggings with coriggings.
+</p>
+
+<p>
+One of my major research projects is constructing an analog of this theory
+for the affine Lie superalgebras.
+</p>
+
+<p>
+Another major research project has been developing a K-theory extension of type
+\(A_n\) crystals. <a href="https://en.wikipedia.org/wiki/Schur_polynomial">Schur
+functions</a> are polynomial representatives of Schubert classes in the
+cohomology ring of the Grassmannian, the set of \(k\)-dimensional planes in
+\(\mathbb{C}^n\). If we instead consider the K-theory of the Grassmannian,
+polynomial representatives are the <em>symmetric Grothendieck polynomials</em>.
+Symmetric Grothendieck polynomials are the generating functions of
+<em>set-valued tableaux</em>, a semistandard tableau where entries can be
+nonempty sets of positive integers. Cara Monical,
+<a href="http://www-personal.umich.edu/~pechenik/">Oliver Pechenik</a>, and I
+constructed a type \(A_n\) crystal structure on set-valued tableaux, and using
+the divided difference operator definition, proposed a new structure that will
+categorify symmetric Grothendieck polynomials that we call a <em>K-crystal</em>.
+We have currently shown this structure exists for all rectangular shapes.
+Recently, I have been using colored integrable lattice models to prove various
+combinatorial properties of (symmetric) Grothendieck polynomials.
+</p>
+
+<p>
+Other things I am working on or interested in:
+<ul>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Coxeter_group">Coxeter groups</a>:
+    These include the symmetric group and Weyl groups.
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Artin_group">Artin groups</a>:
+    These include the braid group.
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Complex_reflection_group">Complex reflection groups</a>:
+    Coxeter groups correspond to the case of real reflections.
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Symmetric_function">Symmetric functions</a>
+    (see also the <a href="https://en.wikipedia.org/wiki/Ring_of_symmetric_functions">
+    ring of symmetric functions</a>): the universal character ring of type
+    \(A_n\) crystals. See also the
+    <a href="http://doc.sagemath.org/html/en/reference/combinat/sage/combinat/sf/sf.html#sage.combinat.sf.sf.SymmetricFunctions">SageMath tutorial</a>.
+  </li>
+</ul>
+</p>
+</main>
+
+<hr/>
+
+<footer>
+<p>Contact: tcscrims {at} gmail.com</p>
+</footer>
+
+</body>
+
+</html>
+
