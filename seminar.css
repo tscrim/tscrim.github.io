@@ -1,0 +1,134 @@
+/*
+ OCU enji #990033 = 153 0 51
+ OCU sapphire #003366 = 0 51 102
+ */
+
+body {
+    background-color: #fafafa;
+}
+
+header {
+    text-align: center;
+    padding-top: 35px;
+}
+
+article {
+    display: block;
+    width: 95%;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article p {
+    text-align:justify;
+}
+
+@media screen and (max-width: 800px) {
+    aside#links {
+        width: 85%;
+        padding: 0;
+    }
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Clear floats after the main body */
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/************************************************
+ *   Navigation bar
+ */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #990033;
+}
+
+nav a {
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a.jatext {
+    font-size: 0.95em;
+    padding: 6px 16px;
+}
+
+nav a:hover {
+    background-color: #003366;
+}
+
+/************************************************
+ *   Talks
+ */
+
+#talks table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#talks th {
+    background-color: #990033;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
+#talks tr {
+    border-bottom: 1px solid #ccc;
+}
+
+#talks td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+#talks tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#talks tr:hover {
+    background-color: #90c3e6;
+}
+
+
+/************************************************
+ *   Footer
+ */
+
+footer {
+    margin: auto;
+    background-color: grey;
+    color: white;
+    padding: 2px;
+    margin-top: 10px;
+    font-size: small;
+    text-align: center;
+    display: block;
+    width: 70%;
+}
+
+footer p {
+    padding: 0px;
+    margin: 5px 0px;
+}
+
